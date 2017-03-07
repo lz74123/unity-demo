@@ -274,16 +274,7 @@ public class LoadTiledXML : MonoBehaviour
             tempTiled.name = templayer.layerName;
             tempTiled.transform.parent = myTiled.transform;//设置myTiled为父对象            
         }// foreach (tiledLayer templayer in tiledLayerArr) 
-         //float CameraSize = GameObject.Find("Main Camera").GetComponent<Camera>().orthographicSize;
-         //假如屏幕宽Screen.width,屏幕高Screen.heigth,Camera的Size为camera.size，
-         //那么矩形的高度总为2* camera.size，
-         //设矩形的宽度为rectWidth,
-         //则Screen.width / Screen.heigth = rectWidth /（2 * camera.size）,
-         //矩形的宽度rectWidth为（2 * camera.size）*Screen.width / Screen.heigth.
-         //也就是说不管屏幕分辨率怎么变化，矩形的高度始终为摄像机size的两倍  
-         //myTiled.transform.position = new Vector3(Screen.width / 200, Screen.height / 200);
-         //myTiled.transform.position = new Vector3(-2 * CameraSize + map.tilewidth / 100.0f, CameraSize - map.tileheight / 100.0f, 0.0f);
-        myTiled.name = filepath;
+         myTiled.name = filepath;
     }
     //[MenuItem("myselfExtend/LoadTiled-----Tiled文件")]
     public void delpng(string fileName) {
